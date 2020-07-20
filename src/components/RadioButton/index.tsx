@@ -48,6 +48,13 @@ const RadioButton = styled(Icon.Component)`
     justify-content: center;
     height: 24px;
     width: 24px;
+
+    & #fill {
+        fill: ${props => props.theme.colors.primary.default};
+        &.disabled {
+            fill: ${props => props.theme.colors.grayScale.S20};
+        }
+    }
 `
 const Label = styled.span`
     max-width: 280px;
